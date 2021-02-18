@@ -8,10 +8,10 @@ class Triangle
 
     if side1 > (side2 + side3) || side2 > (side1 + side3) || side3 > (side1 + side2)
       raise TriangleError
-    else 
-      
-  
-      
+    else
+
+
+
   end
 
   class TriangleError < StandardError
