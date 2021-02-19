@@ -10,9 +10,10 @@ class Triangle
 
   def valid_triangle?
 
-        if side1 >= (side2 + side3) || side2 >= (side1 + side3) || side3 >= (side1 + side2) ||
-          side1 <= 0 || side2 <= 0 || side3 <= 0 || side1.positive? || side2.positive? ||side3.positive?
+        if side1 > (side2 + side3) || side2 > (side1 + side3) || side3 > (side1 + side2) ||
+          side1 <= 0 || side2 <= 0 || side3 <= 0 
           raise TriangleError
+        
         end
   end
   class TriangleError < StandardError
