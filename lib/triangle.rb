@@ -22,7 +22,7 @@ class Triangle
   end
 
   def kind
-    if valid_triangle?
+    if !valid_triangle?
       raise Triangle_Error
     elsif side1 == side2 && side1 == side3
       :equilateral
