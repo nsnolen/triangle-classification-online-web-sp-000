@@ -12,7 +12,7 @@ class Triangle
     if side1.positive? && side2.positive? && side3.positive? && side1 < (side2 + side3) || side2 < (side1 + side3) || side3 < (side2 + side1)
       true
     else
-      raise TriangleError 
+      raise TriangleError
     end
   end
 
