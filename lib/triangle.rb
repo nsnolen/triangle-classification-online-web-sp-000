@@ -10,10 +10,8 @@ class Triangle
 
   def valid_triangle?
 
-    if triangle.all?{|side| side.positive?}
-      true
-    elsif side1 < (side2 + side3) || side2 < (side1 + side3) || side3 < (side2 + side1)
-      true
+    if triangle.all?{|side| side.positive?} && side1 < (side2 + side3) || side2 < (side1 + side3) || side3 < (side2 + side1)
+    true
     else
       raise TriangleError
     end
