@@ -12,7 +12,7 @@ class Triangle
 
     if triangle.all?{|side| side.positive?}
       true
-    if side1 < (side2 + side3) || side2 < (side1 + side3) || side3 < (side2 + side1)
+    elsif side1 < (side2 + side3) || side2 < (side1 + side3) || side3 < (side2 + side1)
       true
     else
       raise TriangleError
