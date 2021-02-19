@@ -9,7 +9,7 @@ class Triangle
 
   def triangle?
     if side1 >= (side2 + side3) || side2 >= (side1 + side3) || side3 >= (side1 + side2) ||
-      side1 <= 0 || side2 <= 0 || side3 <= 0
+      side1 <= 0 || side2 <= 0 || side3 <= 0 || side1 == nil || side2 == nil || side3 == nil
       raise TriangleError
     end
   end
